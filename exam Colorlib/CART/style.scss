@@ -1,0 +1,175 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 480) {
+  td {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  td {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 480px) {
+  table {
+    tbody {
+      tr {
+        td {
+          width: 50%;
+          img {
+            margin: 0 10px;
+          }
+          p {
+            font-size: 9px;
+            margin: 0px 0 16px;
+            width: 132px;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #cont {
+    .total {
+      width: 80%;
+      padding: 0px 15px;
+      margin: 48px;
+      .mini-holder {
+        padding: 50px;
+      }
+    }
+  }
+}
+
+td {
+  padding: 40px 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 10%;
+  h3 {
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+  div {
+    height: 150px;
+    width: 100px;
+  }
+  img {
+    width: 100%;
+    margin: 0 49px;
+  }
+  p {
+    color: grey;
+    font-size: 14px;
+    margin: 0 0 16px;
+  }
+
+  .form-control {
+    height: 54px !important;
+    text-align: center;
+  }
+}
+
+table {
+  display: table;
+  margin: 0 auto;
+  overflow: auto;
+
+  th {
+    background-color: black;
+    color: white;
+    padding: 20px 16px;
+  }
+  tbody {
+    border: 1px solid transparent;
+
+    tr {
+      border-bottom: 1px solid rgb(218, 216, 216);
+    }
+  }
+}
+
+.x {
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 216, 216);
+  padding: 5px 10px;
+  a {
+    color: black;
+
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.total {
+  width: 40%;
+ 
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 15px;
+  margin: 50 auto ;
+  color: grey;
+
+  .mini-holder {
+    margin: 0 0 16px;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  span {
+    font-size: 15px;
+  }
+
+  .last span:last-child {
+    color: black;
+  }
+  hr {
+    border-color: rgb(218, 216, 216);
+  }
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    width: 100%;
+    display: block;
+    background: #ffa45c;
+    border: 1px solid #ffa45c;
+    color: #fff;
+    border-radius: 30px;
+    padding: 16px 24px;
+
+    &:hover {
+      background: white;
+      color: orange;
+    }
+    &:link {
+      text-decoration: none;
+    }
+  }
+}
+

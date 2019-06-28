@@ -1,0 +1,182 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 480) {
+  td {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  td {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  table tbody tr td {
+    width: 50%;
+  }
+  table tbody tr td img {
+    margin: 0 10px;
+  }
+  table tbody tr td p {
+    font-size: 9px;
+    margin: 0px 0 16px;
+    width: 132px;
+    display: block;
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #cont .total {
+    width: 80%;
+    padding: 0px 15px;
+    margin: 48px;
+  }
+  #cont .total .mini-holder {
+    padding: 50px;
+  }
+}
+
+td {
+  padding: 40px 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 10%;
+}
+
+td h3 {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+td div {
+  height: 150px;
+  width: 100px;
+}
+
+td img {
+  width: 100%;
+  margin: 0 49px;
+}
+
+td p {
+  color: grey;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+td .form-control {
+  height: 54px !important;
+  text-align: center;
+}
+
+table {
+  display: table;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+table th {
+  background-color: black;
+  color: white;
+  padding: 20px 16px;
+}
+
+table tbody {
+  border: 1px solid transparent;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dad8d8;
+}
+
+.x {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #dad8d8;
+  padding: 5px 10px;
+}
+
+.x a {
+  color: black;
+}
+
+.x a:link {
+  text-decoration: none;
+}
+
+.x a:hover {
+  color: black;
+}
+
+.total {
+  width: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 15px;
+  margin: 50 auto;
+  color: grey;
+}
+
+.total .mini-holder {
+  margin: 0 0 16px;
+  padding: 20px;
+}
+
+.total h3 {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.total span {
+  font-size: 15px;
+}
+
+.total .last span:last-child {
+  color: black;
+}
+
+.total hr {
+  border-color: #dad8d8;
+}
+
+.total .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.total a {
+  width: 100%;
+  display: block;
+  background: #ffa45c;
+  border: 1px solid #ffa45c;
+  color: #fff;
+  border-radius: 30px;
+  padding: 16px 24px;
+}
+
+.total a:hover {
+  background: white;
+  color: orange;
+}
+
+.total a:link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+  padding: 50px 0;
+  
+}
+
+span {
+  color: black;
+  padding-left: 10px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 11px;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  line-height: 10px;
+
+  span {
+    color: white!important;
+  }
+
+  .icon {
+    color: white!important;
+    font-size: 11px;
+  }
+}
+.navbar {
+  
+  position:absolute;
+background-color: white;
+z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 180px;
+top: 0;
+  position: sticky;
+  height: 66px;
+  line-height: 66px;
+
+  .logo {
+  
+    font-weight: bold;
+    color: black;
+  }
+
+  ul {
+    
+    display: flex;
+    li {
+      text-transform: uppercase;
+      padding-left: 7px;
+
+      a {
+        color: black;
+
+        &:link {
+          font-size: 20px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes wowFadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+.anim {
+ 
+  display:block;
+ 
+  .first{
+    position:relative;
+    top: 0;
+    left: 0;
+    animation-name: wowFadeInOut;
+    
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+  }
+
+  .second{
+
+    position:absolute;
+    top: 100px;
+    left: 0px;
+   
+    animation-name: wowFadeInOut;
+    animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+  }
+ 
+  h1 {
+    text-transform: uppercase;
+  }
+  span {
+    text-transform: uppercase;
+    color: rgba(85, 84, 84, 0.863);
+  }
+
+   .item{
+    display:flex;
+    width: 100%;
+    height: auto;
+   }
+  hr {
+    width: 80px;
+    border-color: black;
+  }
+  .btn-anim {
+    border: none;
+    border-radius: 40px;
+    width: 180px;
+    padding: 10px;
+    background-color: rgb(220, 220, 221);
+    color: black;
+    text-transform: inherit;
+    font-size: 16px;
+
+    &:hover {
+      color: white;
+      background-color: orange;
+    }
+  }
+}
+
+.img-holder {
+  width: 50vw;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.video{
+    display: flex;
+
+
+    ul{
+        display: flex;
+    }
+}
+
+.bests{
+.bef{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  overflow:hidden;
+  display:flex;
+
+  i .fa-plus{
+   
+    font-size: 10px;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+  }
+
+  i .fa-shopping-cart{
+   
+    font-size: 10px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: right;
+  } 
+
+  &:hover .overlay{
+    opacity:1;
+    overflow:hidden;
+    
+    
+  }
+
+  &:hover img{
+    transform: scale(1.1);
+    transition: transform 1s;
+    
+  }
+
+  .overlay{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(255, 166, 0, 0.473);
+  }
+}
+    .text-holder{
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+        
+        a{
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+
+            &:link{
+                text-decoration: none;
+            }
+        }
+        
+        img{
+            width: 100%;
+            height: 382px;
+        }
+
+        span{
+            color: black;
+            font-size: 13px;
+            a{
+                text-align: right;
+            }
+            .far{
+                
+                color: orange;
+                padding-left: 5px;
+            }
+        }
+
+        strike{
+            color: rgb(168, 167, 167);
+        }
+      }
+}
+
+
+
+  #beway{
+    background-color: rgb(248, 249, 250);
+
+.vid{
+  display:flex;
+  
+
+  
+}
+
+.img-holder{
+  height: 700px;
+  width: 1400px;
+  position:relative;
+
+}
+
+a{
+  color:orange;
+  text-decoration:none;
+ &:hover{
+ 
+    color:rgb(255, 94, 0);
+  }
+ 
+}
+.iconlay{
+  position:absolute;
+
+padding-left: 170px;
+padding-top: 300px;
+  font-size: 5em; 
+  
+  
+}
+  
+
+
+    ul{
+      display:flex;
+      justify-content: space-evenly;
+      margin: 60px;
+
+      .flex-col{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        
+        padding:20px;
+
+        i{
+          padding-bottom: 10px;
+          font-size: 3em;
+        }
+      }
+ 
+    }
+
+    
+}
+
+#summer{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .img-holder{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+#numbers{
+  margin-top: 135px;
+ display:flex;
+ justify-content: space-around;
+ justify-content: center;
+  height:50vh;
+  width:100%;
+  background: 
+
+    linear-gradient(
+      rgba(223, 215, 215, 0.45), 
+      rgba(179, 146, 142, 0.45)
+    ),
+   url("../img/bg_4.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+  .d-flex{
+
+    display:flex;
+   flex-direction: column;
+    text-align:center;
+    padding:100px;
+    letter-spacing: 2px;
+ 
+  }
+
+.count
+{
+  
+  line-height: 120px;
+  color:black;
+
+  font-size:25px;
+}
+}
+
+.radius{
+padding: 0 20px;
+text-align:center;
+h5{
+  font-weight: 100;
+}
+  img{
+ 
+    box-sizing: border-box;
+    -webkit-box-shadow: -4px 0px 40px -14px rgba(161,160,158,1);
+    -moz-box-shadow: -4px 0px 40px -14px rgba(161,160,158,1);
+    box-shadow: -4px 0px 40px -14px rgba(161,160,158,1);
+  border-radius: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+#newclothing{
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+button {
+  width: 122px;
+  height: 60px;
+  border-radius: 40px;
+  border-color:white;
+ background-color: white;
+  color: black;
+  font-size: 14px;
+
+  &:hover {
+  color: white;
+  background-color: orange;
+  border: 1px solid orange;
+  transition: 0.3s;
+
+  
+}
+}
+
+
+
+
+h2 {
+  font-weight: 250;
+  letter-spacing: 2px;
+  margin-top: 130px;
+}
+
+p {
+  color: grey;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+
+.next {
+  z-index: 1;
+  margin-left: -250px;
+}
+
+
+.photo {
+  z-index: 1;
+  margin-top: -60px;
+  border: 15px solid white;
+}
+}
+
+

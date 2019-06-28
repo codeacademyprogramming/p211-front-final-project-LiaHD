@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+span {
+  color: black;
+  padding-left: 10px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 11px;
+}
+
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+  line-height: 10px;
+}
+
+header span {
+  color: white !important;
+}
+
+header .icon {
+  color: white !important;
+  font-size: 11px;
+}
+
+.navbar {
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 180px;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 66px;
+  line-height: 66px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  color: black;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar ul li {
+  text-transform: uppercase;
+  padding-left: 7px;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.navbar ul li a:link {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@-webkit-keyframes wowFadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wowFadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.anim {
+  display: block;
+}
+
+.anim .first {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: wowFadeInOut;
+          animation-name: wowFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.anim .second {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  -webkit-animation-name: wowFadeInOut;
+          animation-name: wowFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.anim h1 {
+  text-transform: uppercase;
+}
+
+.anim span {
+  text-transform: uppercase;
+  color: rgba(85, 84, 84, 0.863);
+}
+
+.anim .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.anim hr {
+  width: 80px;
+  border-color: black;
+}
+
+.anim .btn-anim {
+  border: none;
+  border-radius: 40px;
+  width: 180px;
+  padding: 10px;
+  background-color: #dcdcdd;
+  color: black;
+  text-transform: inherit;
+  font-size: 16px;
+}
+
+.anim .btn-anim:hover {
+  color: white;
+  background-color: orange;
+}
+
+.img-holder {
+  width: 50vw;
+}
+
+.img-holder img {
+  height: 100%;
+  width: 100%;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bests .bef {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bests .bef i .fa-plus {
+  font-size: 10px;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.bests .bef i .fa-shopping-cart {
+  font-size: 10px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.bests .bef:hover .overlay {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.bests .bef:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.bests .bef .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background-color: rgba(255, 166, 0, 0.473);
+}
+
+.bests .text-holder {
+  text-align: center;
+}
+
+.bests .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bests .row a {
+  font-size: 16px;
+  font-weight: 100;
+  color: black;
+}
+
+.bests .row a:link {
+  text-decoration: none;
+}
+
+.bests .row img {
+  width: 100%;
+  height: 382px;
+}
+
+.bests .row span {
+  color: black;
+  font-size: 13px;
+}
+
+.bests .row span a {
+  text-align: right;
+}
+
+.bests .row span .far {
+  color: orange;
+  padding-left: 5px;
+}
+
+.bests .row strike {
+  color: #a8a7a7;
+}
+
+#beway {
+  background-color: #f8f9fa;
+}
+
+#beway .vid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#beway .img-holder {
+  height: 700px;
+  width: 1400px;
+  position: relative;
+}
+
+#beway a {
+  color: orange;
+  text-decoration: none;
+}
+
+#beway a:hover {
+  color: #ff5e00;
+}
+
+#beway .iconlay {
+  position: absolute;
+  padding-left: 170px;
+  padding-top: 300px;
+  font-size: 5em;
+}
+
+#beway ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 60px;
+}
+
+#beway ul .flex-col {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+#beway ul .flex-col i {
+  padding-bottom: 10px;
+  font-size: 3em;
+}
+
+#summer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#summer .img-holder {
+  width: 400px;
+  height: 300px;
+}
+
+#numbers {
+  margin-top: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 215, 215, 0.45)), to(rgba(179, 146, 142, 0.45))), url("../img/bg_4.jpg");
+  background: linear-gradient(rgba(223, 215, 215, 0.45), rgba(179, 146, 142, 0.45)), url("../img/bg_4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#numbers .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 100px;
+  letter-spacing: 2px;
+}
+
+#numbers .count {
+  line-height: 120px;
+  color: black;
+  font-size: 25px;
+}
+
+.radius {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.radius h5 {
+  font-weight: 100;
+}
+
+.radius img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: -4px 0px 40px -14px #a1a09e;
+  box-shadow: -4px 0px 40px -14px #a1a09e;
+  border-radius: 100%;
+}
+
+#newclothing img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#newclothing button {
+  width: 122px;
+  height: 60px;
+  border-radius: 40px;
+  border-color: white;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+#newclothing button:hover {
+  color: white;
+  background-color: orange;
+  border: 1px solid orange;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#newclothing h2 {
+  font-weight: 250;
+  letter-spacing: 2px;
+  margin-top: 130px;
+}
+
+#newclothing p {
+  color: grey;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+#newclothing .next {
+  z-index: 1;
+  margin-left: -250px;
+}
+
+#newclothing .photo {
+  z-index: 1;
+  margin-top: -60px;
+  border: 15px solid white;
+}
+/*# sourceMappingURL=sassy.css.map */

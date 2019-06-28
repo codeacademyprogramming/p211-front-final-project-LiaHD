@@ -1,0 +1,54 @@
+.footers {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footers .soc-icon {
+  text-decoration: none;
+  color: black;
+}
+
+.footers .soc-icon i {
+  font-size: 1.7em;
+}
+
+.footers .pad {
+  padding-right: 1px !important;
+}
+
+.footers h4 {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.footers a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.footers a:hover {
+  color: orange;
+}
+
+.footers #social-tw:hover {
+  color: #4099FF;
+  -webkit-transition: all .001s;
+  transition: all .001s;
+}
+
+.footers #social-in:hover {
+  color: #ff1495;
+  -webkit-transition: all .001s;
+  transition: all .001s;
+}
+
+.footers #social-fb:hover {
+  color: #4520eb;
+  -webkit-transition: all .001s;
+  transition: all .001s;
+}
+/*# sourceMappingURL=style.css.map */
